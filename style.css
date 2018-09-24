@@ -29,7 +29,7 @@ h2 {
 }
 
 h3 {
-			font-size: 1em;
+			font-size: 1.2em;
 			font-weight: bold;
 }
 
@@ -68,7 +68,7 @@ h3 {
 			background-color: black;
 }
 
-.nav li a:focus {
+.active {
 			background-color: red;
 }
 
@@ -114,6 +114,10 @@ main ul {
 			color: red;
 }
 
+main li {
+			font-size: 0.8em;
+}
+
 
 main ul ul {
 			margin-left: 30px;
@@ -135,6 +139,19 @@ main li a:hover {
 }
 
 /* ------------ main contact ---------------*/
+
+form {
+			overflow: auto;
+}
+
+.red {
+			color: red;
+			display: inline-block;
+}
+
+.small {
+			font-size: 0.7em;
+}
 
 input[type=text], textarea, select, option, {
 			font-size: 0.9em;
@@ -162,6 +179,7 @@ select {
 		padding: 5px;
 		margin-top: 5px;
 		margin-bottom: 5px;
+		font-size: 0.8em;
 }
 
 textarea {
@@ -171,6 +189,11 @@ textarea {
 		margin-top: 5px;
 		margin-bottom: 5px;
 		resize: none;
+		font-size: 0.8em;
+}
+
+input[value], textarea[value], select[value], option[value], option[disabled] {
+		font-size: 0.8em;
 }
 
 input[type=submit], input[type=reset] {
@@ -197,7 +220,7 @@ input[type=submit]:hover, input[type=reset]:hover {
 
 footer {
 			width: 100%;
-			height: 200px;
+			height: 30px;
 			background-color: blue;
 			position: fixed;
 			bottom: 0;

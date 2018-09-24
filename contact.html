@@ -16,32 +16,32 @@
                       <li><a href="about.html">Om mig</a></li>
                       <li><a href="favorites.html">Favoritfilmer</a></li>
                       <li><a href="links.html">Länkar</a></li>
-                      <li><a href="contact.html">Kontakt</a></li>
+                      <li><a class="active" href="contact.html">Kontakt</a></li>
                   </ul>
               </div>
         <main>
             <h2>Kontakta mig gärna!</h2><br>
               <form id="form-jn" action="#" target="_blank" autocomplete="on">
-                  <label for="name">Ditt namn:</label><br>
-                  <input type="text" name="name"><br>
-                  <label for="email">Din email:</label><br>
-                  <input type="text" name="email"><br>
-                  <label for="matter">Ärende:</label><br>
-                  <select name="matter" form="form-jn">
+                  <label for="name">Ditt namn:<div class="red">*</div></label><br>
+                  <input type="text" name="name" value="Ditt namn (bara bokstäver)" onfocus="this.value=''" pattern="[A-Öa-ö]{}" title="Bara bokstäver" required><br>
+                  <label for="email">Din email:<div class="red">*</div></label><br>
+                  <input type="text" name="email" value="Din email" onfocus="this.value=''" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,3}$" title="Fyll i din email med rätt formatering" required><br>
+                  <label for="matter">Ärende:<div class="red">*</div></label><br>
+                  <select name="matter" form="form-jn" required>
+                      <option disabled="disabled" selected="selected">Välj ämne</option>
                       <option value="complain">Klaga</option>
                       <option value="praise">Beröm</option>
                       <option value="nothing">Ingenting</option>
                       <option value="dont-know">Vet inte</option>
                       <option value="important">Viktigt</option>
                   </select><br>
-                  <label for="comment">Din kommentar</label><br>
-                  <textarea rows="7" cols="50" name="comment" form="form-jn">Skriv din kommentar här</textarea><br><br>
+                  <label for="comment">Din kommentar:<div class="red">*</div></label><br>
+                  <textarea rows="7" cols="50" name="comment" form="form-jn" onfocus="this.value=''" required>Skriv din kommentar här</textarea><br><br>
+                  <p class="red">* Tvingande fält</p><br>
                   <label for="submit"><input type="submit" value="Skicka">
                   <label for="reset"><input type="reset" value="Rensa"><br><br>
-
-
-
               </form>
+              <p class="red, small">* Tvingande fält</div></p>
         </main>
         <footer>
               <div class="footer-container">
