@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
         <meta charset="utf-8">
@@ -20,16 +20,28 @@
                   </ul>
               </div>
         <main>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
+            <h2>Kontakta mig gärna!</h2><br>
+              <form id="form-jn" action="#" target="_blank" autocomplete="on">
+                  <label for="name">Ditt namn:</label><br>
+                  <input type="text" name="name"><br>
+                  <label for="email">Din email:</label><br>
+                  <input type="text" name="email"><br>
+                  <label for="matter">Ärende:</label><br>
+                  <select name="matter" form="form-jn">
+                      <option value="complain">Klaga</option>
+                      <option value="praise">Beröm</option>
+                      <option value="nothing">Ingenting</option>
+                      <option value="dont-know">Vet inte</option>
+                      <option value="important">Viktigt</option>
+                  </select><br>
+                  <label for="comment">Din kommentar</label><br>
+                  <textarea rows="7" cols="50" name="comment" form="form-jn">Skriv din kommentar här</textarea><br><br>
+                  <label for="submit"><input type="submit" value="Skicka">
+                  <label for="reset"><input type="reset" value="Rensa"><br><br>
+
+
+
+              </form>
         </main>
         <footer>
               <div class="footer-container">
