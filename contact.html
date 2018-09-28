@@ -5,66 +5,67 @@
         <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
         <link href="https://unpkg.com/ionicons@4.4.2/dist/css/ionicons.min.css" rel="stylesheet">
         <meta charset="utf-8">
-        <title>Jim Nervall - Kontakta mig</title>
+        <title>Jim Nervall - Kontakt</title>
     <!-- kommentar -->
     </head>
     <body>
         <div class="background-box">
                 <header>
-                    <div class="nav">
+                    <nav class="center">
                         <ul>
                             <li><a href="index.html">Hem</a></li>
                             <li><a href="about.html">Om mig</a></li>
                             <li><a href="favorites.html">Favoritfilmer</a></li>
                             <li><a href="links.html">Länkar</a></li>
-                            <li><a class="active" href="contact.html">Kontakt</a></li>
+                            <li class="active"><a href="contact.html">Kontakt</a></li>
                         </ul>
-                    </div>                            
+                    
+                    </nav>   
                 </header>
-                <div class="main-box">
-                <main>  
-                                        <h1>Kontakta mig gärna!</h1><br>
-                    <p>Skriv gärna något trevligt till mig och posta formuläret.</p>
-                    <div class="form-wrapper">
-                    <form id="form-jn" action="action.html" target="_blank" autocomplete="on">
-                        <div class="form-container">
-                            <label for="name">Ditt namn:*</label><br>
-                            <input type="text" id="name" name="name" value="Ditt namn" pattern="([A-ZÅÄÖ][a-zåäö]+ ?)+"  minlength="2" maxlength="50" title="Bara bokstäver" required onfocus="this.value=''"><br>
-                        </div>
-                        <div class="form-container">
-                            <label for="email">Din email:*</label><br>
-                            <input type="text" id="email" name="email" value="Din email" onfocus="this.value=''" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,3}$" title="Fyll i din email med rätt formatering" required><br>
-                        </div>
-                        <div class="form-container">
-                            <label for="matter">Ärende:*</label><br>
-                            <select name="matter" id="matter" form="form-jn" required>
-                                <option disabled="disabled" selected="selected">Välj ämne</option>
-                                <option value="complain">Klaga</option>
-                                <option value="praise">Beröm</option>
-                                <option value="nothing">Ingenting</option>
-                                <option value="dont-know">Vet inte</option>
-                                <option value="important">Viktigt</option>
-                            </select><br>
-                        </div>
+                <main>
+                    <div class="main-container">
+                        <h1>Kontakta mig gärna!</h1><br>
+                        <p>Skriv gärna något trevligt till mig och posta formuläret.</p>
+                                <form id="form-jn" action="action.html" target="_blank" autocomplete="on">
+                                    <div class="form-container">
+                                        <label for="name">Ditt namn:*</label><br>
+                                        <input type="text" id="name" name="name" value="Ditt namn" pattern="([A-ZÅÄÖ][a-zåäö]+ ?)+"  minlength="2" maxlength="50" title="Bara bokstäver" required onfocus="this.value=''"><br>
+                                    </div>
+                            <div class="form-container">
+                                <label for="email">Din email:*</label><br>
+                                <input type="text" id="email" name="email" value="Din email" onfocus="this.value=''" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,3}$" title="Fyll i din email med rätt formatering" required><br>
+                            </div>
+                            <div class="form-container">
+                                <label for="matter">Ärende:*</label><br>
+                                    <select name="matter" id="matter" form="form-jn" required>
+                                        <option disabled="disabled" selected="selected">Välj ämne</option>
+                                        <option value="complain">Klaga</option>
+                                        <option value="praise">Beröm</option>
+                                        <option value="nothing">Ingenting</option>
+                                        <option value="dont-know">Vet inte</option>
+                                        <option value="important">Viktigt</option>
+                                    </select><br>
+                            </div>
                             <div class="form-container">
                                 <label for="comment">Din kommentar:*</label><br>
-                                <textarea rows="10" cols="50" id="comment" name="comment" form="form-jn" onfocus="this.value=''" required title="Skriv in din kommentar">Skriv din kommentar här</textarea><br><br>
+                                <textarea rows="20" cols="50"  id="comment" name="comment" form="form-jn" onfocus="this.value=''" required title="Skriv in din kommentar">Skriv din kommentar här</textarea><br><br>
                             </div>
                                 <label for="submit"><input type="submit" value="Skicka" id="submit"></label>
                                 <label for="reset"><input type="reset" value="Rensa" id="reset"></label><br><br>
                         </form>
-                    </div>             
+                    </div>
                 </main>
                 <footer>
                     <div class="footer-container">
-                        <p>&copy; Jim Nervall 2018</p> 
-                        <a href="mailto:nervall@hotmail.com">nervall@hotmail.com</a>
-                        <a href="https://facebook.com"><i class="icon ion-logo-facebook"></i></a>
-                        <a href="https://github.com"><i class="icon ion-logo-github"></i></a>
-                        <a href="https://instagram.com"><i class="icon ion-logo-instagram"></i></a>
+                        <div class="centered">
+                            <p>&copy; Jim Nervall 2018</p> 
+                            <a href="mailto:nervall@hotmail.com">nervall@hotmail.com</a>
+                            <a href="https://facebook.com"><i class="icon ion-logo-facebook"></i></a>
+                            <a href="https://github.com"><i class="icon ion-logo-github"></i></a>
+                            <a href="https://instagram.com"><i class="icon ion-logo-instagram"></i></a>
+                        </div>
                     </div>
                 </footer>
-            </div>
         </div>
     </body>
 </html>

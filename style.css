@@ -3,10 +3,11 @@
 * {
     margin: 0;
     padding: 0;
+    margin: auto;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     color: #9a9a9a;
-    overflow: hidden;
+    overflow: auto;
     box-sizing: border-box;
     border-collapse: collapse;
 }
@@ -21,94 +22,132 @@ body {
 .background-box {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(to bottom right, rgba(202, 217, 199, 0.9), rgba(201, 196, 192, 0.9), rgba(230, 232, 208, 0.9), rgba(244, 234, 207, 0.9));
+    background-image: linear-gradient(to bottom right, rgba(202, 217, 199, 0.9), rgba(244, 234, 207, 0.9), rgba(230, 232, 208, 0.9), rgba(244, 234, 207, 0.9));
 }
+
+.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+/* ------------ HEADINGS ---------------*/
+
+h1 {
+    font-size: 3em;
+    font-family: 'Lobster', cursive;
+    color: #ffa700;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* ------------ PARAGRAPHS ---------------*/
+
+p {
+    font-size: 0.9em;
+    line-height: 140%;
+    overflow: hidden;
+}
+
+/* -------- LINKS IN MAIN CONTENT ----------- */
+
+main a {
+    font-size: 0.9em;
+    text-decoration: none;
+    line-height: 35px;
+    color: #ffa700;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: #ffa700;
+}
+
 
 /* -------- HEADER ----------- */
 
 header {
-    position: fixed;
-    width: 55%;
-    left: 50%;
-    transform: translate(-50%);
-    height: 100px;
+    width: 70%;
+    height: 150px;
     background-color: #e6e3d5;
-    overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* -------- HEADER NAVIGATION ----------- */
+/* -------- HEADER NAVIGATION----------- */
 
-.nav {
+nav {
     width: 100%;
-    margin: auto;
-    margin-top: 60px;
-    background-color: #e6e3d5;
+    margin-top: 100px;
+    height: 50px;
+    border-bottom: 0.5px solid #c7c4b9;
+    border-top: 0.5px solid #c7c4b9;
+    background-color: #dedbce;
     overflow: hidden;
-    border-bottom: 1px solid #d8d5c7;
 }
 
-.nav ul {
-    position: relative;
+nav ul {
     margin: auto;
-    margin-left: 150px;
+    padding-left: 20%;
+}
+
+nav li {
+    display: inline-block;
+    float: left;
+    width: 15%;
     list-style-type: none;
+    line-height: 50px;
+    text-align: center;
 }
 
-.nav li {
-    float: left;
-}
-
-.nav li a {
+nav li a {
     display: block;
-    float: left;
-    height: 40px;
     color: #696969;
     text-decoration: none;
-    padding: 10px 40px;
     text-transform: uppercase;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
-.nav li a:hover {
+nav li:hover {
     background-color: #d1cec1;
 }
 
 .active {
-    background-color: #dcd9cb;
+    background-color: #fff;
 }
 
 /* -------- MAIN ----------- */
 
-.main-box {
-    width: 55%;
-    height: 90%;
-    margin: auto;
-    margin-top: 100px;
-    background-color: #fff;
-    text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    overflow: auto;
-}
-
 main {
-    width: 70%; 
-    margin: auto;
-    margin-top: 5%;
+    width: 70%;
+    height: 75%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* -------- MAIN ABOUT ----------- */
-
-.about-wrapper {
+.main-container {
+    margin: 0 auto;
+    margin-top: 60px;
     display: block;
-    margin: auto;
-    width: 100%;
+    width: 60%;
+    overflow: hidden;
 }
+
+/* -------- ABOUT ----------- */
 
 main img {
     display: block;
     float: left;
-    width: 25%;
+    width: 20%;
     border-radius: 50px;
 }
 
@@ -116,7 +155,7 @@ main img {
     padding-left: 40px;
     text-align: left;
     vertical-align: center;
-    width: 75%;
+    width: 80%;
     display: block;
     float: left;
 }
@@ -125,12 +164,16 @@ main p {
     line-height: 180%;
 }
 
-/* -------- MAIN FAVORITES ----------- */
+/* -------- FAVORITES ----------- */
+
+table {
+    margin: 0;
+}
 
 main th {
     width: 20%;
     text-align: left;
-    padding: 20px 0 10px 10px;
+    padding: 10px 0 10px 10px;
     background-color: #fff;
     border: 0;
     border-bottom: 2px solid #9a9a9a;
@@ -139,7 +182,7 @@ main th {
 main td {
     font-size: 0.9em;
     vertical-align: middle;
-    padding: 20px 10px;
+    padding: 15px 10px;
     border-bottom: 1px solid #ccc;
     text-align: left;
 }
@@ -152,7 +195,8 @@ tr:nth-child(2n+1) {
     background-color: rgb(240, 240, 240);
 }
 
-/* -------- MAIN LINKS ----------- */
+
+/* -------- LINKS ----------- */
 
 main a {
     text-decoration: none;
@@ -165,16 +209,9 @@ main a:hover {
     color: #ffa700;
 }
 
-/* -------- MAIN CONTACT ----------- */
-
-
-.form-wrapper {
-    margin-left: 13%;
-    text-align: left;
-}
+/* -------- CONTACT ----------- */
 
 .form-container {
-    margin: auto;
     margin-top: 20px;
     text-align: left;
 }
@@ -184,8 +221,8 @@ label {
 }
 
 textarea {
-    height: 150px;
-    padding-top: 5px;
+    height: 200px;
+    padding-top: 10px;
     overflow: auto;
 }
 
@@ -194,7 +231,7 @@ option[disabled] {
 }
 
 input[type=text], select, select[value], textarea {
-    width: 85%;
+    width: 60%;
     height: 40px;
     padding-left: 7px;
     border: 1px solid #ccc;
@@ -229,30 +266,23 @@ input[type=text]:focus, textarea:focus {
 
 
 /* -------- FOOTER ----------- */
+
 footer {
-    width: 55%;
-    height: 80px;
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
-    margin: auto;
+    width: 70%;
+    height: 100px;
     background-color: #e6e3d5;
-    color: #696969;
-    overflow: hidden;
-    border-top: 1px solid #d8d5c7;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
 }
 
 .footer-container {
-    margin: auto;
-    padding-top: 1%;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 0.9em;
+    margin: 0 auto;
+    margin-top: 25px;
+    display: block;
+    width: 60%;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
 }
-
 
 footer p {
     font-size: 0.9em;
@@ -263,7 +293,7 @@ footer p {
 }
 
 footer a {
-    font-size: 1em;
+    font-size: 0.95em;
     display: inline-block;
     padding-left: 20px;
     vertical-align: middle;
@@ -288,28 +318,4 @@ footer i:hover {
 }
 
 
-/* ------------ HEADINGS ---------------*/
 
-h1 {
-    font-size: 2em;
-    font-family: 'Lobster', cursive;
-    color: #ffa700;
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-h3 {
-    font-size: 1em;
-    font-weight: bold;
-}
-
-/* ------------ PARAGRAPHS ---------------*/
-
-p {
-    font-size: 0.9em;
-    line-height: 110%;
-}
